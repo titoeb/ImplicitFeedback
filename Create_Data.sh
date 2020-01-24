@@ -22,7 +22,6 @@ python Netflix.py
 rm -r download
 rm -r training_set
 rm nf_prize_dataset.tar.gz
-rm wget-log
 
 # Create ML20 dataset
 # Download data
@@ -52,4 +51,4 @@ python MillionSongDataset.py
 rm train_triplets.txt
 rm train_triplets.txt.zip
 
-exit(0)
+exit 0

@@ -59,4 +59,4 @@ users_transformed = np.array([users_mapping[user] for user in users])
 netflix_matrix = scipy.sparse.csr_matrix((np.full(n_interactions, 1), (users_transformed, movies_transformed)), shape=(len(unique_users), len(unique_movies)))
 
 # Save the matrix.
-scipy.sparse.save_npz('Netlix.npz', netflix_matrix)
+scipy.sparse.save_npz('Netflix.npz', netflix_matrix)
